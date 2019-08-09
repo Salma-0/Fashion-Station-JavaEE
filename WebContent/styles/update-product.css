@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+
+.pictures{
+	height: 300px;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	border: solid 1px #838383;
+	overflow-x: auto;
+	overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+	max-width: 400px;
+	height: 100%;
+	margin-left: 2%;
+
+}
+
+
+
+
+
+
+.upload-form{
+	margin-left: 5%;
+	margin-bottom: 3%;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+button{
+	font-weight: 300;
+	font-family:'Lato', 'sans-serif';
+	padding: .5%;
+	border-radius: 3px;
+	font-size: 80%;
+	background-color: #efefef;
+}
+
+td{
+	padding: 5px;
+}
+
+tr{
+	margin-bottom: 2%;
+}
+
+.form-table input, textarea{
+	font-weight: 300;
+	font-family:'Lato', 'sans-serif';
+	padding: 3px;
+	font-size: 85%;
+	width: 500px;
+}
+
+
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  height: 100%;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #5c5c5c;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-remove:hover {
+  color: #eee;
+}
+
+
+
+

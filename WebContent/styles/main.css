@@ -1,0 +1,265 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fafafa;
+	color: #555;
+    font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;	
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+img.logo {
+  vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+
+ul {
+  display: inline;
+  list-style: none;
+}
+
+li {
+  display: inline;
+  cursor: pointer;
+  padding: 20px; 
+  margin-left: 0;
+}
+
+a {
+    color:#434343;
+}
+
+li:hover {
+  
+  text-decoration: underline;
+    text-decoration-color: #000;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 7%;
+	margin-right: 2%;
+}
+
+
+.main-nav li a.menu-icon i{
+	display: none;
+}
+
+
+
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #545454;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 1000px) {
+  .main-nav li a.topnav{display: none;}
+  .main-nav li a.menu-icon i{
+    float: right;
+    display: block;
+  }
+  .cart{
+  
+  }
+  
+  .header{
+      font-size: 70%;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media (max-width: 1000px) {
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive li a.menu-icon i {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .main-nav.responsive li a {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #4d4d4d;
+    color: #efefef;
+    padding: 4%;
+   
+  }
+}
+
+
+
+
+
+.cart{
+	
+	width: 3%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 6%;
+}
+
+header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("beauty.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("beauty.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+
+header h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	text-rendering: optimizeLegibility;	
+	text-transform: uppercase;
+	color: #eeeeee;
+    position: absolute;
+    top: 50%;
+    margin-left: 30%;
+}
+
+.scrollmenu{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.category {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    min-height: 10%;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+.category h3{
+     font-weight: 100;
+     font-family: 'Lato', 'sans-serif';
+     text-transform: uppercase;
+    
+}
+
+.category-img{
+   width: 50%;
+    height: 10%;
+    margin-top: 10%;
+}
+
+.category a{
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+h2{
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-weight: 200;
+	font-family: 'Lato', 'sans-serif';
+	text-transform: uppercase;
+	text-align: center;
+	color: #c71c33;
+}
+
+
+#profile-link{
+	display: none;
+}
+
+
+.about-us{
+   text-align: center;
+	padding: 4%;
+	background-color: #ffebe8;
+}
+
+.about-us h4{
+  	font-family: 'Cookie', cursive;
+    color: #555;
+    font-size: 250%;
+    margin-bottom: 3%;
+}
+
+.about-us img{
+	 border-radius: 50%;
+	 height: 150px;
+	 margin-bottom: 3%;
+}
+
+.about-us h5{
+	margin-bottom: 3%;
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 500;
+	font-size: 100%;
+}
+
+
+.about-us p{
+	font-family: 'Roboto', 'sans-serif';
+	margin-bottom: 3%;
+}
+
+.about-us a{
+	text-decoration: none;
+}
+
+.about-us a:hover, .about-us a:visited, .about-us a:active{
+	color: #e500e5;
+}
+
+.contact{
+	padding: 3%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	font-size: 80%;
+	border-top: solid 1px #000;
+}
+
+#address{
+	margin-right: 5%;
+}
+
+#numbers{
+	margin-right: 5%;
+}
+
+
